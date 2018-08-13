@@ -1,0 +1,22 @@
+ $number: 1;
+$number2: 10px;
+$number3: 20s;
+$string: 'EDTeam';
+$string2: none;
+$color: red;
+$color2: hsl(200,100,50);
+$color3: #aaff99;
+$list: 1px solid red;
+$list2: primary, secondary, tertiary;
+$boolean: true;
+$map: (
+	primary: red,
+	secondary: green,
+	tertiary: blue);
+
+body {
+	color:$color3;
+	@debug $number;
+	@debug type-of($number);
+
+}

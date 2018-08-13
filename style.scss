@@ -1,0 +1,23 @@
+//sass es un preprocesador de sass
+// sass es 100% compatible con css
+//pasos:
+//1. nombrar archivos con ext. scss
+//2. modularizar
+//3. importar desde un archivo principal
+//4. compilar
+
+@import "components/nesting";
+@import "components/datos";
+@import "components/mixins";
+@import "components/ciclos";
+
+$bg: #f2f2f2;
+h1{
+	background:$color;
+}
+
+h2{
+	//permite copiar las propiedades de h1
+	@extend h1;
+	border-color: yellow;
+}
